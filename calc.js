@@ -1,19 +1,41 @@
+var num1;
+var num2;
+var res;
+var results;
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    num1 =  document.getElementById("num1");
+
+    num2 =  document.getElementById("num2");
+
+    res = document.getElementById("result");
+});
+
 function add(){
 
-    //  console.log("lets add");
+    results = +num1.value  + +num2.value;
+
+    res.value = results;
 }
 
 function subtract(){
 
-    //  console.log("lets subtract");
+    results = +num1.value  - +num2.value;
+
+    res.value = results;
 }
 
 function divide(){
 
-    //  console.log("lets divide");
+    results = +num1.value  / +num2.value;
+
+    res.value = results;
 }
 
 function multiply(){
 
-    //  console.log("lets multiply");
+    results = +num1.value  * +num2.value;
+
+    res.value = results;
 }
